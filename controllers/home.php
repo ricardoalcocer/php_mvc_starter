@@ -27,11 +27,11 @@
 
 
     $pageTitle = $Home->getStuff();
-
+    $ctamessage = "This is the Call to Action!";
 
 
     // setup view to render
     $viewName = 'home';
 
     // render view (passing arguments)
-    die($env->render($viewName,['title'=>$pageTitle]));
+    die($env->render($viewName,['title'=>$pageTitle,'ctamessage'=>$ctamessage]));
