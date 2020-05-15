@@ -1,0 +1,14 @@
+#Options -Indexes #https://stackoverflow.com/questions/5932641/deny-directory-listing-with-htaccess
+RewriteEngine On
+
+<IfModule mod_headers.c>
+    #Header set Access-Control-Allow-Origin "*"
+    #Header set Access-Control-Allow-Headers "x-auth-key"
+    #Header set Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+</IfModule>
+
+################################################################
+## ROUTES
+################################################################
+
+RewriteRule ^home ./controllers/home.php [NC,L]
