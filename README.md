@@ -13,7 +13,7 @@ This repo contains a super simple architecture for a PHP website using a MVC par
     - creates data that gets passed over to the view
 - the view
     - the view at /views/home.php extends views/mainlayout.php
-    - mainlayout is the entire layout of the page, from <pre>html</pre> to <pre>/html</pre>
+    - mainlayout is the entire layout of the page, from **open-html** to **close-html**
     - this file has pre-defined spots where data will get inserted
     - the view at /views/home.php gets the data sent by the controller and starts assembling it as HTML
     - HTML is assigned to "blocks" which are then replaced on the mainlayout template
